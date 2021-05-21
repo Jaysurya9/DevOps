@@ -1,0 +1,14 @@
+
+mkdir docker
+cd docker 
+
+mkdir src
+cd src
+
+docker build -t hello-world .
+. -> Represents current directory
+
+docker run -p 80:80 hello-world
+
+#Mount the Volume - ability to see the changes while running 
+docker run -p 80:80 -v /users/user/desktop/docker/src/:/var/www/html hello-world

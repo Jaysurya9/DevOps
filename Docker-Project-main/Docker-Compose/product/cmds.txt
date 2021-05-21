@@ -1,0 +1,23 @@
+mkdir products
+cd products
+
+touch api.py
+
+touch requirements.txt
+
+touch Dockerfile.txt
+
+touch docker-compose.yml
+
+docker-compose up -d
+
+
+browser: localhost:9000 
+gives json output
+
+mkdir websites
+cd websites
+
+touch index.php
+
+docker-compose up -d
